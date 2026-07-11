@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen K | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-glow"></div>
+
+    <!-- Header / Navbar -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">PK<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">Available for New Projects</span>
+                </div>
+                <h1 class="hero-title">Hey, I'm <span class="gradient-text">Praveen K</span></h1>
+                <h2 class="hero-subtitle">I'm a <span id="typed-text"></span><span class="typed-cursor">|</span></h2>
+                <p class="hero-desc">
+                    Designing and engineering high-performance systems, automation pipelines, and modern web applications with immersive interactive experiences.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary glow-effect">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- 3D Profile Card -->
+                    <div class="about-card-wrapper">
+                        <div class="tilt-card glass-panel profile-card">
+                            <div class="card-inner">
+                                <div class="profile-avatar">
+                                    <img src="avatar.jpg" alt="Praveen K">
+                                </div>
+                                <h3 class="profile-name">Praveen K</h3>
+                                <p class="profile-role">Cloud & DevOps Engineer</p>
+                                <div class="profile-socials">
+                                    <a href="https://github.com/Praveenkviswan" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/praveenkviswan" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://www.credly.com/users/praveenkviswan" target="_blank" class="social-icon" title="Credly Badges"><i class="fa-solid fa-award"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Info -->
+                    <div class="about-info">
+                        <h3>Engineering scale with precision</h3>
+                        <p>
+                            I'm a Cloud and DevOps professional passionate about building automated infrastructure, optimizing deployment pipelines, and developing clean front-end architectures. I focus on creating fast, scalable, and resilient systems.
+                        </p>
+                        <p>
+                            When I'm not configuring CI/CD pipelines or wrangling cloud services, I dive into building beautiful, interactive web experiences like this 3D space. I believe in clean code, robust monitoring, and automation at every layer.
+                        </p>
+                        <div class="info-metrics">
+                            <div class="metric">
+                                <span class="metric-num">9+</span>
+                                <span class="metric-label">Years Exp</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">15+</span>
+                                <span class="metric-label">Projects</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">99%</span>
+                                <span class="metric-label">Uptime Aim</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">Tech Stack</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Cloud Platform Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box cloud-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3>Cloud & Platforms</h3>
+                        <p>AWS (LZ Networking, Components), Azure, GCP, IBM Cloud platforms.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">Platform Provisioning</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- IaC Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box iac-icon">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3>Infrastructure as Code</h3>
+                        <p>Terraform, Terragrunt, and CloudFormation template engines.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">IaC Automation</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- CI/CD Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box cicd-icon">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <h3>CI/CD & GitOps</h3>
+                        <p>Git, GitHub Actions, GitLab CI, and ArgoCD deployment pipelines.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">Pipelines & GitOps</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Containers Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box container-icon">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3>Containers</h3>
+                        <p>Docker engine and Kubernetes (EKS / ECS) container orchestration.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">Container Orchestration</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Security Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box security-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Security & DevSecOps</h3>
+                        <p>OS Hardening, Patch Management, and Vulnerability Management audits.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">System Hardening</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Scripting & SRE Card -->
+                    <div class="tilt-card glass-panel skill-card">
+                        <div class="skill-icon-box monitoring-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3>Scripting & Monitoring</h3>
+                        <p>Python, Bash scripting, Linux systems, Prometheus, and Grafana telemetry.</p>
+                        <div class="skill-bar-container">
+                            <span class="skill-name">Site Reliability (SRE)</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1: Senior Platform Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="tilt-card glass-panel timeline-content">
+                            <span class="timeline-date">2026 March - Present</span>
+                            <h3>Senior Platform Engineer</h3>
+                            <h4>Commonwealth Bank of Australia (India)</h4>
+                            <p>Leading the automation of secure enterprise platform solutions. Driving Landing Zone (LZ) provisioning, establishing complex AWS networking setups, overseeing core AWS components, and integrating generative AI tools and developer utilities.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: Platform Engineer -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="tilt-card glass-panel timeline-content">
+                            <span class="timeline-date">2023 July - 2026 March</span>
+                            <h3>Platform Engineer</h3>
+                            <h4>Commonwealth Bank of Australia (India)</h4>
+                            <p>Provisioned and automated scalable AWS Landing Zone (LZ) environments. Developed infrastructure-as-code (IaC) modules for AWS networking architectures and core platform components, ensuring high availability and compliance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Tech Specialist -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="tilt-card glass-panel timeline-content">
+                            <span class="timeline-date">2021 December - 2023 July</span>
+                            <h3>Technical Services Specialist - Cloud</h3>
+                            <h4>IBM India Pvt Limited</h4>
+                            <p>Orchestrated large-scale cloud migrations across AWS, Azure, and IBM Cloud. Managed containerized environments (Docker), established automated patch/vulnerability management pipelines, maintained strict OS hardening, and set up Git-integrated monitoring.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Wipro Senior Cloud Admin -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="tilt-card glass-panel timeline-content">
+                            <span class="timeline-date">2020 December - 2021 December</span>
+                            <h3>Senior Cloud Administrator</h3>
+                            <h4>Wipro Technologies</h4>
+                            <p>Promoted to Senior Cloud Administrator. Managed reliable hybrid infrastructures across AWS, Azure, and GCP. Led vulnerability management audits, handled automated patch processes, enforced OS hardening, and managed container operations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5: Wipro Cloud Admin -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="tilt-card glass-panel timeline-content">
+                            <span class="timeline-date">2016 December - 2020 December</span>
+                            <h3>Cloud Administrator</h3>
+                            <h4>Wipro Technologies</h4>
+                            <p>Maintained cloud virtualizations on AWS, Azure, and GCP. Managed Git repos, implemented server health monitoring, designed routine patch updates, conducted vulnerability remediation, hardened operating systems, and deployed containers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="tilt-card glass-panel project-card">
+                        <div class="project-img-placeholder devops-gradient">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>GitOps K8s Cluster</h3>
+                            <p>A fully automated Kubernetes deployment managed via ArgoCD. Uses Terraform to orchestrate EKS resources on AWS.</p>
+                            <div class="project-tags">
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">ArgoCD</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="tilt-card glass-panel project-card">
+                        <div class="project-img-placeholder api-gradient">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>FastAPI Telemetry Hub</h3>
+                            <p>An API endpoint that gathers, aggregates, and exports server performance metrics directly into Prometheus.</p>
+                            <div class="project-tags">
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Prometheus</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="tilt-card glass-panel project-card">
+                        <div class="project-img-placeholder web-gradient">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Interactive 3D Workspace</h3>
+                            <p>An interactive WebGL dashboard developed using Three.js to map and visualize real-time Kubernetes pods in 3D.</p>
+                            <div class="project-tags">
+                                <span class="tag">Three.js</span>
+                                <span class="tag">WebGL</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact details -->
+                    <div class="contact-details">
+                        <h3>Let's start a conversation</h3>
+                        <p>Feel free to reach out if you're looking for a developer, DevOps specialist, or want to discuss automation practices. I'm always open to talking shop.</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-item-text">
+                                    <span>Email</span>
+                                    <a href="mailto:praveenkviswan@gmail.com">praveenkviswan@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-item-text">
+                                    <span>Location</span>
+                                    <p>Bengaluru, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="tilt-card glass-panel contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Hi Praveen, let's talk about..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary glow-effect">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Praveen K. Built with passion & 3D WebGL.</p>
+            <div class="footer-socials">
+                 <a href="https://github.com/Praveenkviswan" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/praveenkviswan" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href="https://www.credly.com/users/praveenkviswan" target="_blank" title="Credly Badges"><i class="fa-solid fa-award"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
